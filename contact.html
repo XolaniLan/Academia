@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <link
     rel="stylesheet"
@@ -33,23 +33,23 @@
   <nav class="shadow p-1 mb-5 bg-white rounded bar">
     <ul>
       <li>
-        <a href="#">
-          <img class="logo" src="./assets/images/school_logo.png" alt="logo"/>&nbsp;
+        <a data-aos="zoom-out-left" href="#">
+          <img data-aos="zoom-out-left" class="logo" src="./assets/images/school_logo.png" alt="logo"/>&nbsp;
         Mzamomtsha Primary School
       </a>
       </li>
       <li>
-        <a href="home.html">Home</a>
+        <a data-aos="zoom-out-left" href="home.html">Home</a>
       </li>
       
       <li>
-        <a href="./about.html">About Us</a>
+        <a data-aos="zoom-out-left" href="./about.html">About Us</a>
       </li>
       <li>
-        <a href="./events.html">Events</a>
+        <a data-aos="zoom-out-left" href="./events.html" >Events</a>
       </li>
       <li>
-        <a href="contact.html"class="active">Contact</a>
+        <a data-aos="zoom-out-left" href="contact.html" class="active">Contact</a>
       </li>
       
       <li>
@@ -57,7 +57,7 @@
           <button>Explore       <i style="margin-left:4px;" class="fa-solid fa-circle-chevron-down"></i></button>
           <div class="dropdown-options">
             <a href="#">Apply</a>
-            <a href="faq.html">FAQS</a>
+            <a data-toggle="modal" data-target=".bd-example-modal-lg">FAQS</a>
             <a href="#">Make Donations</a>
             <a href="#"></a>
           </div>
@@ -77,7 +77,10 @@
 
   <div class="container1" >
 
-      <div class="contactInfo">
+      <div data-aos="fade-left"
+      data-aos-anchor="#example-anchor"
+      data-aos-offset="500"
+      data-aos-duration="500" class="contactInfo">
         <h1 >Contact Us</h1>
           <div class="box">
               <div class="icon"><i class="fa fa-map-marker" aria-hidden="true" style="color: white;"> </i></div>
@@ -102,7 +105,7 @@
               </div>
              
           </div>
-          <div class="box">
+          <div data-aos="fade-up" class="box">
               <div class="icon"><i class="fa fa-phone" aria-hidden="true" style="color: white;"></i></div>
               <div class="text">
                 
@@ -112,7 +115,7 @@
           
           </div>
 
-          <div class="box">
+          <div  data-aos="fade-right" class="box">
               <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true" style="color: white;"></i></div>
               <div class="text">
                   <h3 style="color: white;">Email</h3>
@@ -122,7 +125,7 @@
           
           </div>
       </div>
-      <div class="contactForm" style="margin-top: 9rem;">
+      <div  data-aos="fade-left"  data-aos-offset="300" data-aos-easing="ease-in-sine" class="contactForm" style="margin-top: 9rem;">
           <form action="">
               <h2>Send Message</h2>
               <div class="inputBox">
@@ -308,6 +311,7 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://use.fontawesome.com/f14fe45cb3.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./Assets/JS/app.js"></script>
     <script>
         var icon = document.getElementById("icon");
@@ -315,6 +319,9 @@
         icon.onclick = function () {
         document.body.classList.toggle("dark-mode");
         };
+  </script>
+  <script>
+    AOS.init();
   </script>
 </body>
 </html>
