@@ -457,4 +457,10 @@ input, textarea{
   color: #555;
 }
 
-h3 {}
+.wholefooter{
+    padding: 0;
+}
+#footer{
+    padding: 0;
+    margin: 0;
+}
